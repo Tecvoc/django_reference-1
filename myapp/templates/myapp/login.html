@@ -1,0 +1,17 @@
+{%  block content %}
+    {%  with home="/home/dd" %}
+    <h1> Login Page </h1>
+    {%  if form.errors %}
+    <p> Username or password is not matching </p>
+    {%  endif %}
+    <form method="post" action="{%  url 'login' %}">
+    {%  csrf_token %}
+    <input type="text" name="username" placeholder="username" required> <br />
+    <input type="password" name="password" placeholder="password" required> <br />
+    <input type="submit" value="submit" name="submit">
+    <input type="hidden" name="next" value="{{ home }}">
+    {%  endwith %}
+
+    </form>
+
+{%  endblock %}

@@ -1,0 +1,6 @@
+<form method="post">{% csrf_token %}
+        <h2> Name </h2> <div> {{ form.name }} </div>
+        <h2> Salary </h2> <div> {{ form.salary }} </div>
+    <input type="submit" value="Update">
+    <a href="{% url 'myapp:employee_update' 12%}"> Delete </a>
+</form>

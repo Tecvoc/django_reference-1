@@ -1,0 +1,11 @@
+{% extends './home.html' %}
+
+{% block title %}
+    Second Page
+{% endblock %}
+
+{%  block body %}
+    {{ block.super }}
+    <a href="{%  url 'myapp:home' %}"> Link to first </a>
+    <h2> Second </h2>
+{% endblock %}
