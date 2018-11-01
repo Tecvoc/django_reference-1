@@ -1,0 +1,33 @@
+# Database
+*.sqlite3
+
+# Editor
+*.swp
+*.idea
+*.vscode
+*.idea/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Log files
+*.log
+
+# OS specific
+.DS_Store
+
+
+# Static files
+staticfiles/
+
+# Environment values
+*.env
+*.venv
+*.envrc
+venv/
+env/
+
+# Configuration files
+*.cfg
